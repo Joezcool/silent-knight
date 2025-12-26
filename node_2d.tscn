@@ -1,8 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://cvi5px7yojdxo"]
+[gd_scene load_steps=4 format=3 uid="uid://cvi5px7yojdxo"]
 
 [sub_resource type="TileSet" id="TileSet_y32ns"]
+
+[sub_resource type="Gradient" id="Gradient_y32ns"]
+offsets = PackedFloat32Array(0.95679015, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_wtcfe"]
+gradient = SubResource("Gradient_y32ns")
 
 [node name="Node2D" type="Node2D"]
 
 [node name="TileMapLayer" type="TileMapLayer" parent="."]
 tile_set = SubResource("TileSet_y32ns")
+
+[node name="The Silent Knight" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="The Silent Knight"]
+texture = SubResource("GradientTexture2D_wtcfe")
