@@ -1,4 +1,5 @@
 extends CharacterBody2D
+class_name Player
 
 # Player Movement
 # Player moves on a grid, Snaps the actual player while tweening the sprite, checks for collisions.

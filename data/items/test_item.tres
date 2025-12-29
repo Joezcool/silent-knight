@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="StatChangeItem" load_steps=2 format=3 uid="uid://dtjqm76iqhre3"]
+
+[ext_resource type="Script" uid="uid://bu4uabxhpo82d" path="res://data/items/stat_change_item.gd" id="1_kwwdd"]
+
+[resource]
+script = ExtResource("1_kwwdd")
+stat_to_change = 1
+metadata/_custom_type_script = "uid://bu4uabxhpo82d"
