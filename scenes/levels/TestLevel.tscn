@@ -6,6 +6,7 @@
 [ext_resource type="Texture2D" uid="uid://bvbb38ulda58a" path="res://assets/tiles_temp.png" id="2_4unv2"]
 [ext_resource type="Script" uid="uid://bungyo0no7h0w" path="res://scenes/levels/player_visuals.gd" id="2_j0sv7"]
 [ext_resource type="Script" uid="uid://dubg0n120cn2d" path="res://scenes/levels/player_movement.gd" id="2_timdk"]
+[ext_resource type="Texture2D" uid="uid://diwxysa3qhudo" path="res://assets/Silent_Knight_Run_Anim.png" id="5_yynx6"]
 [ext_resource type="Script" uid="uid://b5pha1nrv2lmx" path="res://scenes/levels/camera_2d.gd" id="7_4unv2"]
 
 [sub_resource type="OccluderPolygon2D" id="OccluderPolygon2D_yynx6"]
@@ -88,8 +89,6 @@ fill = 1
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(1, 1)
 
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_d0gs8"]
-
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dojpo"]
 size = Vector2(16, 16)
 
@@ -142,7 +141,7 @@ shadow_enabled = true
 texture = SubResource("GradientTexture2D_ae2j3")
 
 [node name="Sprite2D" type="Sprite2D" parent="Knight/Visuals"]
-texture = SubResource("PlaceholderTexture2D_d0gs8")
+texture = ExtResource("5_yynx6")
 offset = Vector2(16, 16)
 region_enabled = true
 region_rect = Rect2(0, 0, 32, 32)
