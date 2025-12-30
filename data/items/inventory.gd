@@ -1,4 +1,5 @@
 extends Node
+class_name PlayerInventory
 
 @export var items: Array[Item]
 var player: Player

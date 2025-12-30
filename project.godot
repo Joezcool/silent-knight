@@ -11,9 +11,16 @@ config_version=5
 [application]
 
 config/name="Silent Knight"
+run/main_scene="uid://dq6tvhqcy2aps"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
 [autoload]
 
 MenuTemplateManager="*res://addons/EasyMenus/Nodes/menu_template_manager.tscn"
+EventManager="*res://event_manager.gd"
+BetterTerrain="*res://addons/better-terrain/BetterTerrain.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/better-terrain/plugin.cfg")
