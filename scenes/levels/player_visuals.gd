@@ -12,7 +12,6 @@ func _ready() -> void:
 	
 
 func on_player_moved(dir: Vector2):
-	print("visual call")
 	global_position -= dir * EventManager.TILE_SIZE
 	if sprite_tween:
 		sprite_tween.kill()
