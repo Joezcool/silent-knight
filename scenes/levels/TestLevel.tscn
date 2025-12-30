@@ -46,9 +46,13 @@ tile_set = ExtResource("1_buy1m")
 position = Vector2(32, 32)
 
 [node name="Camera2D" type="Camera2D" parent="." node_paths=PackedStringArray("target")]
+zoom = Vector2(3, 3)
 script = ExtResource("7_4unv2")
-target = NodePath("")
+target = NodePath("../Knight")
 lerp_strength = 0.1
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+color = Color(0.03849999, 0.024200004, 0.11, 1)
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
@@ -66,4 +70,4 @@ offset_right = 40.0
 offset_bottom = 23.0
 text = "Player Position: "
 script = SubResource("GDScript_1fpmp")
-player = NodePath("")
+player = NodePath("../../../Knight")

@@ -6,11 +6,14 @@
 [ext_resource type="Script" uid="uid://dro0b6paa1gdo" path="res://data/items/inventory.gd" id="4_k2txo"]
 
 [sub_resource type="Gradient" id="Gradient_l1je0"]
-offsets = PackedFloat32Array(0.28666666, 0.32666665, 0.56, 0.5933333)
-colors = PackedColorArray(1, 1, 1, 1, 0.8282078, 0.8282078, 0.8282078, 1, 0.7391304, 0.7391304, 0.7391304, 1, 0, 0, 0, 1)
+interpolation_mode = 1
+offsets = PackedFloat32Array(0, 0.17142858, 0.5933333)
+colors = PackedColorArray(1, 1, 1, 1, 0.4506483, 0.4506483, 0.45064825, 1, 0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_ae2j3"]
 gradient = SubResource("Gradient_l1je0")
+width = 512
+height = 512
 fill = 1
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(1, 1)
