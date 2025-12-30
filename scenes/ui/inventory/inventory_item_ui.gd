@@ -8,6 +8,5 @@ class_name InventoryItemUI
 func update(item: Item, count: int = 1):
 	icon.texture = item.sprite
 	name_label.text = item.name
-	count_label.text = str(count)
+	count_label.text = str("x", count)
 	count_label.visible = count > 1
-	print('test')

@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://d2fgbest0np1f"]
 
-[ext_resource type="Script" uid="uid://ckr13ra8omrwd" path="res://scenes/ui/inventory/inventory_item_horizontal.gd" id="1_5jps2"]
+[ext_resource type="Script" uid="uid://ckr13ra8omrwd" path="res://scenes/ui/inventory/inventory_item_ui.gd" id="1_5jps2"]
 
 [node name="ItemInventoryUI" type="HBoxContainer" node_paths=PackedStringArray("icon", "name_label", "count_label")]
 script = ExtResource("1_5jps2")

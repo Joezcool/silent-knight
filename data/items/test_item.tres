@@ -4,5 +4,7 @@
 
 [resource]
 script = ExtResource("1_kwwdd")
-stat_to_change = 1
+amount = 10
+name = "asdasdfasdf"
+description = "test"
 metadata/_custom_type_script = "uid://bu4uabxhpo82d"
