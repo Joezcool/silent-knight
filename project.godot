@@ -25,6 +25,10 @@ BetterTerrain="*res://addons/better-terrain/BetterTerrain.gd"
 
 enabled=PackedStringArray("res://addons/better-terrain/plugin.cfg")
 
+[gui]
+
+theme/custom="uid://3577oknxaphm"
+
 [rendering]
 
 textures/canvas_textures/default_texture_filter=0

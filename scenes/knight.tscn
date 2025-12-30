@@ -1,7 +1,8 @@
-[gd_scene load_steps=11 format=3 uid="uid://b3asmnrjbbgyj"]
+[gd_scene load_steps=11 format=3 uid="uid://dl6pfeiutkry5"]
 
 [ext_resource type="Script" uid="uid://peeudconj48o" path="res://scenes/knight.gd" id="1_0dyjn"]
 [ext_resource type="Script" uid="uid://bungyo0no7h0w" path="res://scenes/levels/player_visuals.gd" id="2_5fsgc"]
+[ext_resource type="Texture2D" uid="uid://diwxysa3qhudo" path="res://assets/Silent_Knight_Run_Anim.png" id="3_5fsgc"]
 [ext_resource type="Script" uid="uid://dubg0n120cn2d" path="res://scenes/levels/player_movement.gd" id="3_swm0g"]
 [ext_resource type="Script" uid="uid://dro0b6paa1gdo" path="res://data/items/inventory.gd" id="4_k2txo"]
 [ext_resource type="Script" uid="uid://qfwfeotwxapv" path="res://data/items/item.gd" id="5_swm0g"]
@@ -19,8 +20,6 @@ height = 512
 fill = 1
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(1, 1)
-
-[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_d0gs8"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dojpo"]
 size = Vector2(16, 16)
@@ -42,7 +41,7 @@ shadow_enabled = true
 texture = SubResource("GradientTexture2D_ae2j3")
 
 [node name="Sprite2D" type="Sprite2D" parent="Visuals"]
-texture = SubResource("PlaceholderTexture2D_d0gs8")
+texture = ExtResource("3_5fsgc")
 offset = Vector2(16, 16)
 region_enabled = true
 region_rect = Rect2(0, 0, 32, 32)

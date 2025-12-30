@@ -1,0 +1,21 @@
+[gd_resource type="Theme" load_steps=4 format=3 uid="uid://3577oknxaphm"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_se44u"]
+bg_color = Color(5.7756904e-07, 0.39670646, 0.2493225, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_f4gee"]
+bg_color = Color(0.8392157, 0, 0, 1)
+border_width_bottom = 5
+border_color = Color(0.64705884, 0, 0, 1)
+corner_radius_top_left = 10
+corner_radius_top_right = 10
+corner_radius_bottom_right = 10
+corner_radius_bottom_left = 10
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bcxwf"]
+bg_color = Color(6.738305e-07, 0.547827, 0.3539162, 1)
+
+[resource]
+Button/styles/hover = SubResource("StyleBoxFlat_se44u")
+Button/styles/normal = SubResource("StyleBoxFlat_f4gee")
+Button/styles/pressed = SubResource("StyleBoxFlat_bcxwf")
