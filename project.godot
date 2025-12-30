@@ -18,3 +18,9 @@ config/icon="res://icon.svg"
 [autoload]
 
 MenuTemplateManager="*res://addons/EasyMenus/Nodes/menu_template_manager.tscn"
+EventManager="*res://event_manager.gd"
+BetterTerrain="*res://addons/better-terrain/BetterTerrain.gd"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/better-terrain/plugin.cfg")
