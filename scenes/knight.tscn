@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3 uid="uid://b3asmnrjbbgyj"]
+[gd_scene load_steps=9 format=3 uid="uid://b3asmnrjbbgyj"]
 
 [ext_resource type="Script" uid="uid://peeudconj48o" path="res://scenes/knight.gd" id="1_0dyjn"]
 [ext_resource type="Script" uid="uid://bungyo0no7h0w" path="res://scenes/levels/player_visuals.gd" id="2_5fsgc"]
@@ -6,54 +6,14 @@
 [ext_resource type="Script" uid="uid://dro0b6paa1gdo" path="res://data/items/inventory.gd" id="4_k2txo"]
 
 [sub_resource type="Gradient" id="Gradient_l1je0"]
-interpolation_mode = 1
-offsets = PackedFloat32Array(0.014285714, 0.09642857, 0.54285717)
-colors = PackedColorArray(1, 1, 1, 1, 0.52, 0.52, 0.52, 1, 0, 0, 0, 1)
+offsets = PackedFloat32Array(0.28666666, 0.32666665, 0.56, 0.5933333)
+colors = PackedColorArray(1, 1, 1, 1, 0.8282078, 0.8282078, 0.8282078, 1, 0.7391304, 0.7391304, 0.7391304, 1, 0, 0, 0, 1)
 
 [sub_resource type="GradientTexture2D" id="GradientTexture2D_ae2j3"]
 gradient = SubResource("Gradient_l1je0")
-width = 512
-height = 512
 fill = 1
 fill_from = Vector2(0.5, 0.5)
 fill_to = Vector2(1, 1)
-
-[sub_resource type="Animation" id="Animation_4unv2"]
-resource_name = "flicker"
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.46666667, 1),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(1.05, 1.05), Vector2(1, 1)]
-}
-
-[sub_resource type="Animation" id="Animation_yynx6"]
-length = 0.001
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:scale")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0),
-"transitions": PackedFloat32Array(1),
-"update": 0,
-"values": [Vector2(1, 1)]
-}
-
-[sub_resource type="AnimationLibrary" id="AnimationLibrary_ktef7"]
-_data = {
-&"RESET": SubResource("Animation_yynx6"),
-&"flicker": SubResource("Animation_4unv2")
-}
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_d0gs8"]
 
@@ -73,12 +33,6 @@ move_tween_duration = 0.12
 position = Vector2(16, 16)
 shadow_enabled = true
 texture = SubResource("GradientTexture2D_ae2j3")
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Visuals/PointLight2D"]
-libraries = {
-&"": SubResource("AnimationLibrary_ktef7")
-}
-autoplay = "flicker"
 
 [node name="Sprite2D" type="Sprite2D" parent="Visuals"]
 texture = SubResource("PlaceholderTexture2D_d0gs8")
