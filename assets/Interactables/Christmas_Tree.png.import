@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://diwxysa3qhudo"
-path="res://.godot/imported/Silent_Knight_Run_Anim.png-00b0e9ad6fabc31a50c50645787af013.ctex"
+uid="uid://dxnhxk18lqkh1"
+path="res://.godot/imported/Christmas_Tree.png-7ad8e426d136e7d981025d7d18f09762.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/Silent_Knight_Run_Anim.png"
-dest_files=["res://.godot/imported/Silent_Knight_Run_Anim.png-00b0e9ad6fabc31a50c50645787af013.ctex"]
+source_file="res://assets/Interactables/Christmas_Tree.png"
+dest_files=["res://.godot/imported/Christmas_Tree.png-7ad8e426d136e7d981025d7d18f09762.ctex"]
 
 [params]
 
