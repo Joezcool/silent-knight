@@ -1,8 +1,9 @@
-[gd_scene load_steps=6 format=4 uid="uid://ckae5af5fqxvg"]
+[gd_scene load_steps=7 format=4 uid="uid://ckae5af5fqxvg"]
 
 [ext_resource type="TileSet" uid="uid://dbsleu4n61uck" path="res://assets/BaseTiles.tres" id="1_buy1m"]
 [ext_resource type="TileSet" uid="uid://buxof16kxbojy" path="res://assets/TerrainTiles.tres" id="2_4unv2"]
 [ext_resource type="PackedScene" uid="uid://b3asmnrjbbgyj" path="res://scenes/knight.tscn" id="3_timdk"]
+[ext_resource type="PackedScene" uid="uid://cifc5g8tpa4x0" path="res://scenes/ui/inventory/player_inventory_ui.tscn" id="5_j0sv7"]
 [ext_resource type="Script" uid="uid://b5pha1nrv2lmx" path="res://scenes/levels/camera_2d.gd" id="7_4unv2"]
 
 [sub_resource type="GDScript" id="GDScript_1fpmp"]
@@ -70,4 +71,10 @@ offset_right = 40.0
 offset_bottom = 23.0
 text = "Player Position: "
 script = SubResource("GDScript_1fpmp")
+player = NodePath("../../../Knight")
+
+[node name="PlayerInventoryUI" parent="CanvasLayer/Debug" node_paths=PackedStringArray("player") instance=ExtResource("5_j0sv7")]
+layout_mode = 0
+offset_top = 143.0
+offset_bottom = 143.0
 player = NodePath("../../../Knight")

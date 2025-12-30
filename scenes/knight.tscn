@@ -1,9 +1,11 @@
-[gd_scene load_steps=9 format=3 uid="uid://b3asmnrjbbgyj"]
+[gd_scene load_steps=12 format=3 uid="uid://b3asmnrjbbgyj"]
 
 [ext_resource type="Script" uid="uid://peeudconj48o" path="res://scenes/knight.gd" id="1_0dyjn"]
 [ext_resource type="Script" uid="uid://bungyo0no7h0w" path="res://scenes/levels/player_visuals.gd" id="2_5fsgc"]
 [ext_resource type="Script" uid="uid://dubg0n120cn2d" path="res://scenes/levels/player_movement.gd" id="3_swm0g"]
 [ext_resource type="Script" uid="uid://dro0b6paa1gdo" path="res://data/items/inventory.gd" id="4_k2txo"]
+[ext_resource type="Script" uid="uid://qfwfeotwxapv" path="res://data/items/item.gd" id="5_swm0g"]
+[ext_resource type="Script" uid="uid://bu4uabxhpo82d" path="res://data/items/stat_change_item.gd" id="6_k2txo"]
 
 [sub_resource type="Gradient" id="Gradient_l1je0"]
 interpolation_mode = 1
@@ -23,14 +25,23 @@ fill_to = Vector2(1, 1)
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dojpo"]
 size = Vector2(16, 16)
 
+[sub_resource type="Resource" id="Resource_swm0g"]
+script = ExtResource("6_k2txo")
+amount = 10
+name = "asdasdfasdf"
+description = "test"
+metadata/_custom_type_script = "uid://bu4uabxhpo82d"
+
 [node name="Knight" type="CharacterBody2D"]
 collision_layer = 8
 script = ExtResource("1_0dyjn")
 
-[node name="Visuals" type="Node2D" parent="." node_paths=PackedStringArray("player")]
+[node name="Visuals" type="Node2D" parent="." node_paths=PackedStringArray("player", "sprite", "night_light")]
 script = ExtResource("2_5fsgc")
 player = NodePath("..")
 move_tween_duration = 0.12
+sprite = NodePath("Sprite2D")
+night_light = NodePath("PointLight2D")
 
 [node name="PointLight2D" type="PointLight2D" parent="Visuals"]
 position = Vector2(16, 16)
@@ -69,5 +80,7 @@ position = Vector2(8, 0)
 target_position = Vector2(8, 0)
 hit_from_inside = true
 
-[node name="Inventory" type="Node" parent="."]
+[node name="Inventory" type="Node" parent="." node_paths=PackedStringArray("player")]
 script = ExtResource("4_k2txo")
+player = NodePath("..")
+starting_items = Array[ExtResource("5_swm0g")]([SubResource("Resource_swm0g")])

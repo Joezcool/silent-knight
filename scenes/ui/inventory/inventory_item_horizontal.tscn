@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://d2fgbest0np1f"]
+
+[ext_resource type="Script" uid="uid://ckr13ra8omrwd" path="res://scenes/ui/inventory/inventory_item_horizontal.gd" id="1_5jps2"]
+
+[node name="ItemInventoryUI" type="HBoxContainer" node_paths=PackedStringArray("icon", "name_label", "count_label")]
+script = ExtResource("1_5jps2")
+icon = NodePath("TextureRect")
+name_label = NodePath("NameLabel")
+count_label = NodePath("CountLabel")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+custom_minimum_size = Vector2(32, 32)
+layout_mode = 2
+
+[node name="NameLabel" type="Label" parent="."]
+layout_mode = 2
+text = "Inventory Uninitialized!"
+
+[node name="CountLabel" type="Label" parent="."]
+layout_mode = 2
+text = "x1"

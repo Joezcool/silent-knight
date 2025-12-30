@@ -5,6 +5,10 @@ class_name PlayerVisuals
 var sprite_tween: Tween
 @export_range(0.01, 0.3, 0.01) var move_tween_duration := .185
 
+
+@export var sprite: Sprite2D
+@export var night_light: PointLight2D
+
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	player.visuals = self
